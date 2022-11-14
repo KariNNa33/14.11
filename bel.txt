@@ -1,0 +1,68 @@
+138.1
+let arr = [
+	['a', 'b', 'c'],
+	['d', 'e', 'f'],
+	['g', 'h', 'i'],
+	['j', 'k', 'l'],
+];
+console.log(arr[3][2]);
+console.log(arr[1][1]);
+console.log(arr[2][0]);
+console.log(arr[0][0]);
+
+138.2
+let arr = [[1, 2], [3, 4], [5, 6]];
+a = arr[0][0];
+b = arr[0][1];
+c = arr[1][0];
+d = arr[1][1];
+e = arr[2][0];
+f = arr[2][1];
+console.log(a + b + c + d + e + f);
+
+138.3
+let arr = [
+	[
+		[1, 2],
+		[3, 4],
+	],
+	[
+		[5, 6],
+		[7, 8],
+	],
+];
+a = arr[0][0][0];
+b = arr[0][0][1];
+c = arr[0][1][0];
+d = arr[0][1][1];
+e = arr[1][0][0];
+f = arr[1][0][1];
+g = arr[1][1][0];
+h = arr[1][1][1];
+
+console.log(a + b + c + d + e + f + g + h);
+
+138.4
+let arr = [[1, 2, 3, [4, 5, [6, 7]]], [8, [9, 10]]];
+a = arr[0][0];
+b = arr[0][1];
+c = arr[0][2];
+d = arr[0][3][0];
+e = arr[0][3][1];
+f = arr[0][3][2][0];
+g = arr[0][3][2][1];
+h = arr[1][0];
+i = arr[1][1][0];
+j = arr[1][1][1];
+
+console.log(a + b + c + d + e + f + g + h + i + j); 
+
+139.1
+let arr = [[1, 2, 3], [4, 5], [6]];
+let sum = 0;
+for (let subArr of arr){
+for (let elem of subArr){
+sum+=elem;
+}
+}
+console.log(sum);
